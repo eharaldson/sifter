@@ -4,7 +4,7 @@
 
 Sifter is an AI shopping assistant that searches for visually and semantically similar clothing across new and secondhand listings. It combines a Chrome extension for shopping on retailer websites with a conversational web app.
 
-I built Sifter as a solo project, taking it from product-page extraction and catalogue ingestion through model adaptation, search, user interfaces, and deployment. The original development history spans August 2025–January 2026.
+I built Sifter as a solo project, taking it from product-page extraction and catalogue ingestion through model adaptation, search, user interfaces, and deployment. The original development history spans October 2025–January 2026.
 
 [![Watch the Sifter demo: clothing search in the web app and new and secondhand alternatives in the Chrome extension](docs/assets/sifter-thumbnail.png)](https://youtu.be/JD3vFuBSMLw)
 
