@@ -1,0 +1,36 @@
+{
+  "name": "@find/extraction",
+  "version": "1.0.0",
+  "description": "Shared product extraction utilities for Find AI Shopping Assistant",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "import": "./dist/browser.js",
+      "require": "./dist/browser.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@find/types": "workspace:*",
+    "cheerio": "^1.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.2",
+    "@types/cheerio": "^0.22.35"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}

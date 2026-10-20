@@ -1,0 +1,35 @@
+{
+  "name": "sifter-source-snapshot",
+  "packageManager": "pnpm@10.15.1",
+  "version": "1.0.0",
+  "description": "AI Shopping Assistant - Monorepo containing backend API, browser extension, web app, and promotional site",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "build:packages": "pnpm --filter '@find/*' build",
+    "dev": "pnpm -r --parallel dev",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "backend:dev": "pnpm --filter backend dev",
+    "backend:build": "pnpm --filter backend build",
+    "backend:start": "pnpm --filter backend start",
+    "extension:dev": "pnpm --filter extension dev",
+    "extension:build": "pnpm --filter extension build",
+    "web:dev": "pnpm --filter web dev",
+    "web:build": "pnpm --filter web build",
+    "check:publication": "python3 scripts/check_publication.py"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

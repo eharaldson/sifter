@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>JSON-LD Product Full</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Test Product",
+    "description": "A great product",
+    "brand": { "@type": "Brand", "name": "Acme" },
+    "image": ["/images/p1.jpg", "https://cdn.example.com/p2.jpg"],
+    "offers": {
+      "@type": "Offer",
+      "price": "129.99",
+      "priceCurrency": "USD",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Sample Product</h1>
+  </main>
+</body>
+</html>

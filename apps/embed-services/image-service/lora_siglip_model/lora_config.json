@@ -1,0 +1,10 @@
+{
+  "model_name": "google/siglip-so400m-patch14-384",
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.1,
+  "lora_target_modules": [
+    "q_proj",
+    "v_proj"
+  ]
+}
